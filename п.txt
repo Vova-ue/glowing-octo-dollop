@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анубіон - Про нас</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: red;
+            text-transform: uppercase;
+            position: relative;
+        }
+        header h1::after {
+            content: '⚡';
+            position: absolute;
+            top: 50%;
+            right: -30px;
+            transform: translateY(-50%);
+            font-size: 50px;
+            color: red;
+            animation: lightning 0.5s infinite alternate;
+        }
+        @keyframes lightning {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: red;
+        }
+        section {
+            padding: 20px;
+        }
+        section h2 {
+            font-size: 28px;
+            color: red;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Анубіон</h1>
+    </header>
+    
+    <nav>
+        <a href="#home">Головна</a>
+        <a href="#about">Про нас</a>
+        <a href="#products">Продукти</a>
+        <a href="#projects">Проекти</a>
+    </nav>
+
+    <section id="home">
+        <h2>Головна</h2>
+        <p>Ласкаво просимо на наш сайт. Тут ви знайдете більше інформації про наші продукти та проекти.</p>
+    </section>
+
+    <section id="about">
+        <h2>Про нас</h2>
+        <p>Ми компанія, яка займається розробкою інноваційних технологій у різних галузях. Наша мета - змінити світ за допомогою сучасних рішень.</p>
+    </section>
+
+    <section id="products">
+        <h2>Продукти</h2>
+        <p>Наші продукти включають в себе передові рішення для автоматизації процесів, управління даними та штучного інтелекту.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Проекти</h2>
+        <p>Ми працюємо над кількома великими проектами, які мають на меті поліпшити якість життя та допомогти в розвитку індустрії.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Анубіон. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
